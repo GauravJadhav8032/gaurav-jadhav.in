@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-dark-900 text-gray-100 font-sans antialiased;
+    min-height: 100vh;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-dark-800;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-primary-600 rounded-full;
+  }
+}
+
+@layer components {
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-white mb-2;
+  }
+
+  .section-subtitle {
+    @apply text-gray-400 text-lg mb-12;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-400 to-accent-400 bg-clip-text text-transparent;
+  }
+
+  .card {
+    @apply bg-dark-600 border border-dark-300 rounded-2xl p-6 hover:border-primary-600 transition-all duration-300 hover:shadow-lg hover:shadow-primary-900/30;
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 bg-primary-600 text-white font-semibold rounded-xl hover:bg-primary-500 transition-all duration-300 hover:shadow-lg hover:shadow-primary-600/40 active:scale-95 inline-flex items-center gap-2;
+  }
+
+  .btn-outline {
+    @apply px-6 py-3 border border-primary-600 text-primary-400 font-semibold rounded-xl hover:bg-primary-600 hover:text-white transition-all duration-300 active:scale-95 inline-flex items-center gap-2;
+  }
+
+  .tech-badge {
+    @apply text-xs font-mono px-3 py-1 rounded-full bg-primary-900/50 text-primary-300 border border-primary-700/50;
+  }
+}
+
+/* Streak animation */
+.streak {
+  position: absolute;
+  width: 2px;
+  border-radius: 9999px;
+  opacity: 0.15;
+  animation: streakMove linear infinite;
+}
+
+@keyframes streakMove {
+  0% {
+    transform: translateX(-200px) translateY(200px);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 0.15;
+  }
+
+  90% {
+    opacity: 0.15;
+  }
+
+  100% {
+    transform: translateX(calc(100vw + 200px)) translateY(calc(-100vh - 200px));
+    opacity: 0;
+  }
+}
+
+/* Glow orbs */
+.glow-orb {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+}
+
+/* Input focus ring */
+input:focus,
+textarea:focus {
+  outline: none;
+}
