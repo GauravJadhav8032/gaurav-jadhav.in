@@ -97,7 +97,7 @@ export const portfolioData = {
     ],
 
     skills: [
-        { category: "Frontend", items: ["Angular", "TypeScript", "HTML5", "CSS3", "JavaScript"] },
+        { category: "Frontend", items: ["Angular", "React.js", "TypeScript", "HTML5", "CSS3", "JavaScript"] },
         { category: "Backend", items: ["Node.js", "Express.js", "Java"] },
         { category: "Database", items: ["MongoDB", "MySQL"] },
         { category: "Tools & Platforms", items: ["Git", "GitHub", "WordPress", "Elementor", "Swagger"] },
