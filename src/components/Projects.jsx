@@ -8,8 +8,8 @@ export const portfolioData = {
         location: "Amravati, Maharashtra, IN",
         linkedin: "https://www.linkedin.com/in/gaurav-jadhav-919419288/",
         github: "https://github.com/GauravJadhav8032",
-        portfolio: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
-        resumeLink: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
+        portfolio: "https://drive.google.com/file/d/167jrRwtlfmjdqaxdIriscJCR32w3oP1v/view?usp=drive_link",
+        resumeLink: "https://drive.google.com/file/d/167jrRwtlfmjdqaxdIriscJCR32w3oP1v/view?usp=drive_link",
     },
 
     summary:
