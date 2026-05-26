@@ -1,100 +1,116 @@
-import { motion } from 'framer-motion';
-import { useInView } from '../hooks/useInView';
-import { portfolioData } from '../data/portfolioData';
-import { FiGithub, FiExternalLink } from 'react-icons/fi';
-import { HiStar } from 'react-icons/hi';
+export const portfolioData = {
+    personalInfo: {
+        name: "Gaurav Jadhav",
+        title: "Full-Stack Developer ",
+        subtitle: "",
+        email: "gauravsjadhav02@gmail.com",
+        phone: "+91-9850258032",
+        location: "Amravati, Maharashtra, IN",
+        linkedin: "https://www.linkedin.com/in/gaurav-jadhav-919419288/",
+        github: "https://github.com/GauravJadhav8032",
+        portfolio: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
+        resumeLink: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
+    },
 
-export default function Projects() {
-    const [ref, inView] = useInView(0.1);
+    summary:
+        "Versatile Full Stack Developer with hands-on experience across frontend, backend, and full-stack development.Proficient in Angular, ReactJS, Node.js, Express, MongoDB, and MySQL with strong command over REST APIdesign and integration. Skilled in JWT authentication, Swagger documentation, and AI-powered API integration.Experienced in Agile workflows with a proven ability to build and deploy responsive, user-centric web applicationsend-to-end.",
 
-    return (
-        <section id="projects" className="py-24 bg-dark-900 relative overflow-hidden">
-            <div className="glow-orb w-96 h-96 bg-primary-800/10 -bottom-20 -left-20" />
+    education: [
+        {
+            institution: "P. R. Pote Patil College of Engineering and Management",
+            degree: "B.E. in Computer Science and Engineering",
+            grade: "6.5/10 CGPA (Till 7th Semester)",
+            location: "Amravati, MH",
+            year: "2022 – 2026",
+        },
+        {
+            institution: "Shriman Chandulal Shet HighSchool & Jr. College",
+            degree: "Maharashtra Board (Class XII)",
+            grade: "69%",
+            location: "Khed, Ratnagiri, MH",
+            year: "2020 – 2022",
+        },
+        {
+            institution: "Jagruti Vidyalaya, Akola",
+            degree: "Maharashtra Board (Class XI)",
+            grade: "79%",
+            location: "Akola, MH",
+            year: "2019 – 2020",
+        },
+    ],
 
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" ref={ref}>
-                <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={inView ? { opacity: 1, y: 0 } : {}}
-                    transition={{ duration: 0.6 }}
-                    className="text-center mb-16"
-                >
-                    <p className="text-primary-400 font-mono text-sm mb-2">What I've built</p>
-                    <h2 className="section-title">Projects</h2>
-                    <div className="w-16 h-1 bg-gradient-to-r from-primary-500 to-accent-500 mx-auto rounded-full" />
-                </motion.div>
+    experience: [
+        {
+            role: "Angular Web Development Intern",
+            company: "Infosys Springboard",
+            period: "Sept 2025 – Nov 2025",
+            type: "Internship",
+            bullets: [
+                "Built and integrated RESTful APIs using Node.js, Express, and MongoDB with an Angular frontend for the TaxPal Project.",
+                "Implemented Swagger documentation, API testing, and backend integration for Settings and Categories modules.",
+                "Completed full-stack experiential training covering component architecture, routing, and state management in Angular.",
+            ],
+        },
+        {
+            role: "Java Full Stack Intern",
+            company: "AICTE Eduskill",
+            period: "April 2025 – June 2025",
+            type: "Internship",
+            bullets: [
+                "Completed structured training on Java, Spring Boot, HTML, CSS, and JavaScript with focus on OOP, MVC architecture, and database integration.",
+                "Strengthened full-stack fundamentals through guided learning and practical exercises involving REST API development.",
+            ],
+        },
+    ],
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {portfolioData.projects.map((project, i) => (
-                        <motion.div
-                            key={project.name}
-                            initial={{ opacity: 0, y: 30 }}
-                            animate={inView ? { opacity: 1, y: 0 } : {}}
-                            transition={{ duration: 0.5, delay: i * 0.12 }}
-                            className="group relative card flex flex-col"
-                        >
-                            {project.featured && (
-                                <div className="absolute -top-3 -right-3 bg-accent-500 text-white text-xs font-bold px-3 py-1 rounded-full flex items-center gap-1 shadow-lg">
-                                    <HiStar className="w-3 h-3" />
-                                    Featured
-                                </div>
-                            )}
+    projects: [
+        {
+            name: "TaxPal",
+            tagline: "Personal Finance & Tax Estimator",
+            description:
+                "A full-stack web application enabling freelancers to track income/expenses, manage budgets, and estimate taxes. Designed responsive UI screens and integrated REST APIs for financial report generation, data export, JWT-based authentication, dashboard analytics, and Swagger-based API documentation.",
+            tech: ["Angular", "Node.js", "Express", "MongoDB", "JWT", "Swagger"],
+            live: "https://taxpal-ten.vercel.app/",
+            github: "https://github.com/GauravJadhav8032",
+            featured: true,
+        },
+        {
+            name: "LearnerBits",
+            tagline: "Student Resource & Tech Blog Platform",
+            description:
+                "Built and scaled a dynamic WordPress platform serving study notes, tech blogs, and job updates to 50,000+ visitors. Enhanced accessibility and engagement through user-centric design and SEO optimization.",
+            tech: ["WordPress", "Elementor", "SEO"],
+            live: "https://learnerbits.com/",
+            github: null,
+            featured: true,
+        },
+        {
+            name: "NatureJournal",
+            tagline: "AI Assisted Journal System",
+            description:
+                "Built a full-stack journaling app using React, Node.js, and MongoDB to store and manage user journal entries. Integrated Gemini API (LLM) to analyze emotions, extract keywords, and generate AI-powered summaries, demonstrating practical GenAI and prompt engineering skills. Deployed using Vercel (frontend) and Render (backend), applying cloud-based deployment workflows.",
+            tech: ["React", "Node.js", "MongoDB", "Gemini API", "REST APIs"],
+            live: "https://naturejournal.vercel.app/",
+            github: null,
+            featured: true,
+        },
+        {
+            name: "CodeNavigator",
+            tagline: "Learning Path Generator",
+            description:
+                "Developed a full-stack platform for personalized tech learning roadmaps. Built secure REST APIs with JWT authentication and progress tracking. Engineered a responsive dashboard for roadmap visualization and insights.",
+            tech: ["React", "Node.js", "Express", "MongoDB", "REST APIs", "JWT Auth"],
+            live: "https://code-navigator-blond.vercel.app/",
+            github: null,
+            featured: true,
+        },
+    ],
 
-                            {/* Header */}
-                            <div className="flex items-start justify-between mb-4">
-                                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary-600 to-primary-800 flex items-center justify-center">
-                                    <span className="text-white font-bold text-sm">
-                                        {project.name.charAt(0)}
-                                    </span>
-                                </div>
-                                <div className="flex gap-3">
-                                    {project.github && (
-                                        <a
-                                            href={project.github}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-gray-500 hover:text-white transition-colors"
-                                            title="View on GitHub"
-                                        >
-                                            <FiGithub className="w-5 h-5" />
-                                        </a>
-                                    )}
-                                    {project.live && (
-                                        <a
-                                            href={project.live}
-                                            target="_blank"
-                                            rel="noreferrer"
-                                            className="text-gray-500 hover:text-accent-400 transition-colors"
-                                            title="Live Demo"
-                                        >
-                                            <FiExternalLink className="w-5 h-5" />
-                                        </a>
-                                    )}
-                                </div>
-                            </div>
-
-                            {/* Name & tagline */}
-                            <h3 className="text-white font-bold text-lg mb-1 group-hover:text-primary-300 transition-colors">
-                                {project.name}
-                            </h3>
-                            <p className="text-primary-400 text-xs font-mono mb-3">{project.tagline}</p>
-
-                            {/* Description */}
-                            <p className="text-gray-400 text-sm leading-relaxed flex-1 mb-5">
-                                {project.description}
-                            </p>
-
-                            {/* Tech pills */}
-                            <div className="flex flex-wrap gap-2 mt-auto">
-                                {project.tech.map((t) => (
-                                    <span key={t} className="tech-badge">
-                                        {t}
-                                    </span>
-                                ))}
-                            </div>
-                        </motion.div>
-                    ))}
-                </div>
-            </div>
-        </section>
-    );
-}
+    skills: [
+        { category: "Frontend", items: ["Angular", "TypeScript", "HTML5", "CSS3", "JavaScript"] },
+        { category: "Backend", items: ["Node.js", "Express.js", "Java"] },
+        { category: "Database", items: ["MongoDB", "MySQL"] },
+        { category: "Tools & Platforms", items: ["Git", "GitHub", "WordPress", "Elementor", "Swagger"] },
+        { category: "Concepts", items: ["REST APIs", "JWT Auth", "OOP"] },
+    ],
+};
