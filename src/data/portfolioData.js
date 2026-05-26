@@ -8,12 +8,12 @@ export const portfolioData = {
         location: "Amravati, Maharashtra, IN",
         linkedin: "https://www.linkedin.com/in/gaurav-jadhav-919419288/",
         github: "https://github.com/GauravJadhav8032",
-        portfolio: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
-        resumeLink: "https://drive.google.com/file/d/1je-N1IaD8RhXoPUedZSSOwTExldY_CY8/view?usp=sharing",
+        portfolio: "https://drive.google.com/file/d/167jrRwtlfmjdqaxdIriscJCR32w3oP1v/view?usp=drive_link",
+        resumeLink: "https://drive.google.com/file/d/167jrRwtlfmjdqaxdIriscJCR32w3oP1v/view?usp=drive_link",
     },
 
     summary:
-        "Full-Stack Developer and final-year B.E. Computer Science student with hands-on experience in Angular, Node.js, REST APIs, and Java. Proven ability to design and deploy scalable web applications, integrate backend services, and build data-driven solutions.",
+        "Versatile Full Stack Developer with hands-on experience across frontend, backend, and full-stack development.Proficient in Angular, ReactJS, Node.js, Express, MongoDB, and MySQL with strong command over REST APIdesign and integration. Skilled in JWT authentication, Swagger documentation, and AI-powered API integration.Experienced in Agile workflows with a proven ability to build and deploy responsive, user-centric web applicationsend-to-end.",
 
     education: [
         {
@@ -85,19 +85,29 @@ export const portfolioData = {
             featured: true,
         },
         {
-            name: "Bakery Shop App UI",
-            tagline: "Responsive Web Application",
+            name: "NatureJournal",
+            tagline: "AI Assisted Journal System",
             description:
-                "Designed a clean, fully responsive UI for a bakery shop application with cross-device compatibility and smooth navigation.",
-            tech: ["Angular", "TypeScript", "HTML", "CSS"],
-            live: null,
-            github: "https://github.com/GauravJadhav8032/Bakery-Shop-APP-UI",
-            featured: false,
+                "Built a full-stack journaling app using React, Node.js, and MongoDB to store and manage user journal entries. Integrated Gemini API (LLM) to analyze emotions, extract keywords, and generate AI-powered summaries, demonstrating practical GenAI and prompt engineering skills. Deployed using Vercel (frontend) and Render (backend), applying cloud-based deployment workflows.",
+            tech: ["React", "Node.js", "MongoDB", "Gemini API", "REST APIs"],
+            live: "https://naturejournal.vercel.app/",
+            github: null,
+            featured: true,
+        },
+        {
+            name: "CodeNavigator",
+            tagline: "Learning Path Generator",
+            description:
+                "Developed a full-stack platform for personalized tech learning roadmaps. Built secure REST APIs with JWT authentication and progress tracking. Engineered a responsive dashboard for roadmap visualization and insights.",
+            tech: ["React", "Node.js", "Express", "MongoDB", "REST APIs", "JWT Auth"],
+            live: "https://code-navigator-blond.vercel.app/",
+            github: null,
+            featured: true,
         },
     ],
 
     skills: [
-        { category: "Frontend", items: ["Angular", "React.js", "TypeScript", "HTML5", "CSS3", "JavaScript"] },
+        { category: "Frontend", items: ["Angular", "TypeScript", "HTML5", "CSS3", "JavaScript"] },
         { category: "Backend", items: ["Node.js", "Express.js", "Java"] },
         { category: "Database", items: ["MongoDB", "MySQL"] },
         { category: "Tools & Platforms", items: ["Git", "GitHub", "WordPress", "Elementor", "Swagger"] },
