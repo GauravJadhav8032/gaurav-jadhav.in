@@ -19,7 +19,7 @@ export const portfolioData = {
         {
             institution: "P. R. Pote Patil College of Engineering and Management",
             degree: "B.E. in Computer Science and Engineering",
-            grade: "6.5/10 CGPA (Till 7th Semester)",
+            grade: "8.20/10 CGPA",
             location: "Amravati, MH",
             year: "2022 – 2026",
         },
@@ -32,7 +32,7 @@ export const portfolioData = {
         },
         {
             institution: "Jagruti Vidyalaya, Akola",
-            degree: "Maharashtra Board (Class XI)",
+            degree: "Maharashtra Board (Class X)",
             grade: "79%",
             location: "Akola, MH",
             year: "2019 – 2020",
@@ -66,7 +66,7 @@ export const portfolioData = {
     projects: [
         {
             name: "TaxPal",
-            tagline: "Personal Finance & Tax Estimator",
+            tagline: "A Personal Finance & Tax Estimator",
             description:
                 "A full-stack web application enabling freelancers to track income/expenses, manage budgets, and estimate taxes. Designed responsive UI screens and integrated REST APIs for financial report generation, data export, JWT-based authentication, dashboard analytics, and Swagger-based API documentation.",
             tech: ["Angular", "Node.js", "Express", "MongoDB", "JWT", "Swagger"],
@@ -96,7 +96,7 @@ export const portfolioData = {
         },
         {
             name: "CodeNavigator",
-            tagline: "Learning Path Generator",
+            tagline: "A Smart Learning Path Generator",
             description:
                 "Developed a full-stack platform for personalized tech learning roadmaps. Built secure REST APIs with JWT authentication and progress tracking. Engineered a responsive dashboard for roadmap visualization and insights.",
             tech: ["React", "Node.js", "Express", "MongoDB", "REST APIs", "JWT Auth"],
